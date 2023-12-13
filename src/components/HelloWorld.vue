@@ -1,33 +1,15 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
-  </div>
+  <div class="App">
+        <h1>Hello World!</h1>
+        <h2>Welcome To My Card</h2>
+        <img class="card" src="https://media.cnn.com/api/v1/images/stellar/prod/231212131107-01-ronaldo-50-goals.jpg?c=16x9&q=h_833,w_1480,c_fill" alt="Ronaldo" />
+        <div class="paragraph">
+          <p>This is Cristiano Ronaldo. One of the greatest Football/Soccer players ever.</p>
+        </div>
+        <div class="btn-wrapper">
+ <a href="https://hax.psu.edu">
+   <button>Details</button></a></div>
+      </div>
 </template>
 
 <script>
@@ -41,18 +23,38 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
+.App {
+  text-align: center;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+
+.card{
+  border-style: dotted;
+  border-width: 4px;
+  border-color: black;
+  border-radius: 10px;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
+img {
+  margin: 40px;
+  width: 500px;
+  height: auto;
+  width: 450px;
 }
-a {
-  color: #42b983;
+.btn-wrapper {
+  margin: 24px;
+}
+.btn-wrapper button {
+  font-size: 24px;
+  color: blue;
+  background-color: lightgray;
+}
+.btn-wrapper button:hover {
+  color: lightgray;
+  background-color: blue;
+}
+
+.paragraph {
+  font-size: 20px;
+  font-style: italic;
+  margin: 25px;
 }
 </style>
